@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas tag</title>
+    <style>
+        #pic{
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+   <h1>canvas tag (2d graphics)</h1> 
+   <canvas id="pic"></canvas>
+   <script>
+    var cn=document.getElementById('pic');
+    var ctx= cn.getContext("2d");
+    ctx.font="32px cursive";
+    ctx.fillStyle="orange"; /* to fill color */
+     /* to create x,y value */
+    ctx.fillText("hiiiiii" ,30,40);
+
+   </script>
+</body>
+</html>

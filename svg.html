@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg</title>
+    <style>
+        .txt
+        {
+            fill: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>svg( scaleable vector graphic)no drop in resolution</h1>
+    <svg width="200" height="200">
+        <circle cx="50" cy="50" r="30" stroke="red" stroke-width="5" fill="green"></circle><!-- stroke-width->>border cx=x axis cy= y axis r= radious stroke=border-->
+    </svg>
+    <hr>
+    <svg width="200" heigth="200">
+        <line x1="0" y1="0" x2="200" y2="200" style="stroke: black;stroke-width:  5;"></line>
+        <line x1="200" y1="0" x2="0" y2="200" style="stroke: black;stroke-width:  5;"></line>
+    </svg>
+    <hr>
+    <svg width="200" height="200">
+        <rect width="100" height="50" style="fill: blue;stroke:black; stroke-width:5;"></rect>
+    </svg>
+    <hr>
+    <svg viewBox="0 0 240 80" xmlns="https://www-w3.org/2000/svg">
+        <text x="30" y="30" class="txt"> welcome to svg</text>
+    </svg>
+</body>
+</html>

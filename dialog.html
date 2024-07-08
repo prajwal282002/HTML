@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>dialog tag</title>
+    <style>
+        button{
+            padding: 8px 10px;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+        #show{
+            background-color: teal;
+            color: #fff;
+
+        }
+        .yes{
+            background-color: green;
+            color: white;
+
+        }
+        .no, .cls{
+            background-color: orangered;
+            color: white;
+        }
+        .cls{
+            float: right;
+
+        }
+        dialog{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>dialog tag</h1>
+    <button id="show">show dialog</button>
+    <dialog id="alert">
+        <button class="cls">close</button>
+        <div>
+            <h1>alert dialog box</h1>
+            <p>are u sure to delete user</p>
+            <div class="btn-group">
+                <button class="no">NO</button>
+                <button class="yes">YEs</button>
+            </div>
+        </div>
+    </dialog>
+    <script>
+        var sh=document.getElementById('show');
+        var cl= document.querySelector('.cls');
+        var al= document.getElementById('alert');
+        sh.addEventListener('click',function(){
+            al.show();
+        });
+        cl.addEventListener('click',function(){
+            al.close();
+        });
+
+    </script>
+</body>
+</html>
